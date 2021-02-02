@@ -9,7 +9,7 @@ transifex-client==0.12.4
 edx-i18n-tools
 
 # for docker devstack
-docker-compose >= 1.5.1
+# docker-compose >= 1.5.1
 
 # More efficient checking for runserver reload trigger events
 pyinotify; "linux" in sys_platform

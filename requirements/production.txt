@@ -3,9 +3,9 @@
 
 boto==2.45.0
 django-ses==0.8.5
-gevent==1.2.1
+gevent
 gunicorn==19.6.0
-mysqlclient==1.3.10
+mysqlclient
 newrelic==4.8.0.110
 nodeenv==1.1.2
 PyYAML==3.12
