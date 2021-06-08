@@ -319,7 +319,12 @@ SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.social_details',
     'social_core.pipeline.social_auth.social_uid',
     'social_core.pipeline.social_auth.auth_allowed',
-    'social_core.pipeline.social_auth.social_user',
+
+    # Custom pipeline social_user to override social core
+    # No need to raise exception, just change storaged user.
+    'credentials.pipeline.social_auth.social_user',
+    # 'social_core.pipeline.social_auth.social_user',
+    
     'auth_backends.pipeline.get_user_if_exists',
     'social_core.pipeline.user.create_user',
     'social_core.pipeline.social_auth.associate_user',
