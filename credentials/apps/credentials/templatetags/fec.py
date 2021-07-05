@@ -25,6 +25,6 @@ def fec_url(url):
     """
     get url from input then adding /static as prefix and _v=$$$ as suffix
     """
-    if settings.ENHENCED_THEME is not None and settings.ENHENCED_THEME.fecVersion is not None:
-        return "/static/fec/{}?_v={}".format(url, settings.ENHENCED_THEME.fecVersion)
+    if settings.ENHENCED_THEME is not None:
+        return "/static/fec/{}?_v={}".format(url, settings.ENHENCED_THEME["fecVersion"].replace(".", ""))
     return url
