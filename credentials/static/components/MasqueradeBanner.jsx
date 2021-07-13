@@ -84,7 +84,7 @@ class MasqueradeBanner extends React.Component {
     return (
       <nav className={masqueradeBannerWrapperClass}>
         <div className="masquerade-banner-actions">
-          <form onSubmit={this.handleSubmit} className="masquerade-form form-group">
+          <form onSubmit={this.handleSubmit} className="masquerade-form">
             <label htmlFor="masquerade-select" className="masquerade-label"> { gettext('View as: ') }
               <select className="masquerade-select" id="masquerade-select" onChange={this.handleSelectChange} value={this.state.masqueradeTarget} >
                 <option value="Staff">{gettext('Staff')}</option>

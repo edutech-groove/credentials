@@ -4,6 +4,7 @@ Template tags and helper functions for escaping script tag.
 from django import template
 from django.template.defaultfilters import date
 from django.utils.translation import get_language
+from django.utils.safestring import mark_safe
 register = template.Library()
 
 
